@@ -26,6 +26,8 @@ require("lazy").setup({
   spec = {
     -- import your plugins
     { import = "plugins" },
+    {"jose-elias-alvarez/null-ls.nvim"},
+    {"windwp/nvim-ts-autotag"},
     {
   "ray-x/go.nvim",
   dependencies = {  -- optional packages
