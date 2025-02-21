@@ -2,6 +2,7 @@ require("config.lazy")
 require("autoclose").setup()
 require('go').setup()
 require'nvim-treesitter.configs'.setup {
+
   -- A list of parser names, or "all" (the listed parsers MUST always be installed)
   ensure_installed = { "c", "lua", "vim", "vimdoc" , "go" },
 
@@ -60,8 +61,8 @@ require('nvim-ts-autotag').setup({
 })
 
 vim.cmd[[colorscheme nightfox]]
+require("config.conf")
 vim.cmd[[autocmd BufWinEnter * if &buftype != 'quickfix']]
 vim.cmd[[nnoremap <F3> :NERDTreeToggle<CR>]]
 vim.cmd[[nnoremap <C-n> :NERDTreeFocus<CR>]]
 vim.cmd[[filetype indent on]]
-require("config.conf")
