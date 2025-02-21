@@ -1,5 +1,4 @@
 require("config.lazy")
-require("config.conf")
 require("autoclose").setup()
 require('go').setup()
 require'nvim-treesitter.configs'.setup {
@@ -60,8 +59,9 @@ require('nvim-ts-autotag').setup({
   }
 })
 
-vim.cmd[[colorscheme catppuccin-mocha]]
+vim.cmd[[colorscheme nightfox]]
 vim.cmd[[autocmd BufWinEnter * if &buftype != 'quickfix']]
 vim.cmd[[nnoremap <F3> :NERDTreeToggle<CR>]]
 vim.cmd[[nnoremap <C-n> :NERDTreeFocus<CR>]]
 vim.cmd[[filetype indent on]]
+require("config.conf")

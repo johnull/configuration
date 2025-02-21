@@ -28,6 +28,7 @@ require("lazy").setup({
     { import = "plugins" },
     {"jose-elias-alvarez/null-ls.nvim"},
     {"windwp/nvim-ts-autotag"},
+    {"EdenEast/nightfox.nvim"},
     {
   "ray-x/go.nvim",
   dependencies = {  -- optional packages
